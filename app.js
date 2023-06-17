@@ -2,10 +2,10 @@ let tg = window.Telegram.WebApp;
 
 tg.expand();
 
-tg.MainButton.textColor = "#FFFFFF";
+tg.MainButton.textColor = "#2cab37";
 tg.MainBurron.color="#2cab37";
 
-let item= "";
+let item= " ";
 
 let btn1 = document.getElementById("btn1");
 let btn2 = document.getElementById("btn2");
@@ -89,7 +89,7 @@ let usercard= document.getElementById("usercard");
 
 let p = document.createElement("p");
 
-p.innerText='${tg.initDataUnsafe.user.first_name} ${tg.initDataUnsafe.user.first_name}';
+p.innerText='${tg.initDataUnsafe.user.first_name} ${tg.initDataUnsafe.user.last_name}';
 
 
 usercard.appendChild(p);
